@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>개인정보 입력</title>
+    <style>
+        body{
+            margin: 40px;
+        }
+        div#top{
+            margin-bottom: 20px;
+        }
+        hr {
+            width: 70%;
+        }
+        input.button{
+            width: 80px;
+            height: 40px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="top">
+        <h1>개인정보 입력 페이지</h1>
+        <hr align="left">
+    </div>
+    <div id="main">
+        <form action="form_ok.jsp" method="post">
+            - 이름 : <input type="text" name="name"><br><br>
+            - 비밀번호 : <input type="password" name="password"><br><br>
+            - 성별 : <input type="radio" name="gender" value="남성"> 남성 <input type="radio" name="gender" value="여성"> 여성<br><br>
+            - 이메일 : <input type="text" name="email1"> @
+            <select name="domain"><option>------선택------</option>
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="handong1.ac.kr">handong.ac.kr</option>
+                <option value="handong2.edu">handong.edu</option>
+            </select><br><br>
+            - 전화번호 : <input type="text" name="num1"> - <input type="text" name="num2"> - <input type="text" name="num3"><br><br>
+            - 본인 RC : <input type="radio" name="rc" value="토레이"> 토레이 <input type="radio" name="rc" value="장기려"> 장기려 <input type="radio" name="rc" value="카이퍼"> 카이퍼 <input type="radio" name="rc" value="손양원"> 손양원 <input type="radio" name="rc" value="열송학사"> 열송학사 <input type="radio" name="rc" value="카마이클"> 카마이클<br><br>
+            - 전공 :
+            <select name="major"><option>------선택------</option>
+                <optgroup label="전산전자공학부">
+                    <option value="컴퓨터공학전공">컴퓨터공학전공</option>
+                    <option value="전자공학전공">전자공학전공</option>
+                    <option value="AI.컴퓨터공학심화전공">AI.컴퓨터공학심화전공</option>
+                    <option value="전자공학심화전공">전자공학심화전공</option>
+                    <option value="IT전공">IT전공</option>
+                </optgroup>
+            </select><br><br>
+            - 현재 하고 있는 활동 : <input type="checkbox" name="work1" value="총학생회"> 총학생회 <input type="checkbox" name="work2" value="자치회"> 자치회 <input type="checkbox" name="work3" value="동아리"> 동아리 <input type="checkbox" name="work4" value="기타 TF팀"> 기타 TF팀 <input type="checkbox" name="work5" value="랩실"> 랩실 <input type="checkbox" name="work6" value="학회"> 학회 <input type="checkbox" name="work7" value="기타 활동"> 기타 활동 <input type="checkbox" name="work8" value="아무것도 하지 않음"> 아무것도 하지 않음<br><br>
+            - 생일 : <input type="date" min="1900-01-01" max="2005-12-31" name="birth"><br><br>
+            - 특이사항 : <br><textarea name="content" cols="40" rows="5"></textarea><br><br><br>
+            <input type="submit" value="저장" class="button">  <input type="reset" value="새로입력" class="button">
+        </form>
+    </div>
+</div>
+</body>
+</html>
